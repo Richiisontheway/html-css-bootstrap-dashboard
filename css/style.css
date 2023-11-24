@@ -11,3 +11,32 @@
 /* 
     GENERAL
 */
+.orangered{
+    color: #FF8F00;
+}
+
+header,
+main{
+    background-color: #F8F9FA;
+}
+/* 
+    HEADER
+*/
+header{
+    height: 70px;
+}
+header > .row{
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.bg-light-grey{
+    background-color: #E5E5E5;
+}
+/* 
+    MAIN
+*/
+aside{
+    background-image: url(img);
+}
