@@ -35,8 +35,23 @@ img{
     background-color: #E5E5E5;
 }
 /* 
-    MAIN
+    ASIDE
 */
 aside{
-    background-image: url(img);
+    background-image: url(../img/sidebar-bg.png);
+    height: calc(100vh - 70px);
+    background-color: #051E34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* HEADER MAIN */
+.bg-bluette{
+    background-color: #165BBA;
+}
+
+.plus{
+    width: 30px;
+    height: 30px;
+    border: solid 1px white;
 }
