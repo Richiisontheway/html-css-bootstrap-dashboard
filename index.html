@@ -98,10 +98,10 @@
 
     </header>
     <!-- INIZIO MAIN -->
-    <main>
-        <div class="row g-0">
+    <main class="height">
+        <div class="row g-0 height">
 
-            <div class="col-1">
+            <div class="col-1 height">
                 <!-- INIZIO ASIDE -->
                 <aside>
 
@@ -152,7 +152,7 @@
                 </aside>
 
             </div>
-            <div class="col-11 bg-black">
+            <div class="col-11 height overflow-auto">
                 <!-- HEADER MAIN -->
                 <div class="bg-primary text-light">
                     
@@ -239,31 +239,226 @@
                                 </span>
                             
                             </button>
-                            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
                                 <div class="offcanvas-header">
 
-                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                  <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                        
+                                        Inserisci un nuovo studente
+                                    
+                                    </h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close">
+
+                                    </button>
+                                    
                                 </div>
                                 <div class="offcanvas-body">
-                                  ...
+
+                                    <form>
+
+                                        <div class="row">
+
+                                            <div class="col-6">
+
+                                                <label for="Name">
+
+                                                    Nome
+
+                                                </label>
+                                                <input type="text" placeholder="inserisci il tuo nome" class="form-control" required>
+
+                                            </div>
+                                            <div class="col-6">
+
+                                                <label for="Cognome">
+
+                                                    Cognome
+
+                                                </label>
+                                                <input type="text" placeholder="inserisci il tuo Cognome" class="form-control" required>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+
+                                                <label for="Email">
+
+                                                    Email
+
+                                                </label>
+                                                <input type="email" placeholder="inserisci la tua email" class="form-control" required>
+                                            </div>
+                                            <div class="col-6">
+
+                                                <label for="password">
+
+                                                    password
+
+                                                </label>
+                                                <input type="password" class="form-control" required>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+
+                                                <label for="Email">
+
+                                                    Email
+
+                                                </label>
+                                                <div class="input-group flex-nowrap">
+                                                    
+                                                    <span class="input-group-text" id="addon-wrapping">
+                                                        
+                                                        @
+                                                    
+                                                    </span>
+                                                    <input type="email" placeholder="inserisci la tua email" class="form-control" required>
+                                                
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6">
+
+                                                <label for="password">
+
+                                                    password
+
+                                                </label>
+                                                <input type="password" class="form-control" required>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+
+                                                <label for="address">
+
+                                                    Indirizzo
+
+                                                </label>
+                                                <input type="text" class="form-control" required>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-6">
+
+                                                <label for="Città">
+
+                                                    Città
+
+                                                </label>
+                                                <input type="text" class="form-control" required>
+
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="State">
+
+                                                    Stato
+
+                                                </label>
+                                                <select class="form-select form-select" aria-label="Small select example" required>
+                                                    <option selected>
+                                                        
+                                                        Scegli...
+                                                    
+                                                    </option>
+                                                    <option value="1">
+                                                        
+                                                        Italia
+                                                    
+                                                    </option>
+                                                    <option value="2">
+
+                                                        Papa Francesco
+
+                                                    </option>
+                                                    <option value="3">
+                                                        
+                                                        Malena la Pugliese
+                                                    
+                                                    </option>
+
+                                                </select>
+
+                                            </div>
+                                            <div class="col-2">
+
+                                                <label for="Codice Postale">
+
+                                                    Cap
+
+                                                </label>
+                                                <input type="text" class="form-control" required>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-12">
+
+                                                <div class="mb-3">
+
+                                                    <label for="formFile" class="form-label">
+                                                        
+                                                        Default file input example
+                                                    
+                                                    </label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-4">
+
+                                                <input type="checkbox" required> Seleziona per proseguire
+
+                                            </div>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            
+                                            Submit
+                                        
+                                        </button>
+                                        <button type="reset" value="reset" class="btn btn-warning">
+                                            
+                                            Reset
+                                        
+                                        </button>
+
+                                    </form>
+
                                 </div>
+
                             </div>
+
                         </div>
 
                     </div>
 
                 </div>
                 <!-- LAYOUT COLONNE -->
-                <div class="row g-0 mt-3">
+                <div class="row g-0 overflow-auto overflow-hidden bg-light">
 
-                    <div class="col-8">
+                    <div class="col-7">
 
-                        <div class="mx-2">
+                        <div class="mx-3 my-3">
 
-                            <div class="bg-light-grey p-2">
+                            <div class="bg-light-grey py-2 px-2">
 
                                 <h2>
 
@@ -272,58 +467,612 @@
                                 </h2>
 
                             </div>
-                            <div class="bg-light">
+                            <div class="px-2 bg-light-subtle py-2">
 
                                 <table class="table table-hover">
+
                                     <thead>
-                                        <th>
 
-                                            Nome
+                                        <tr>
 
-                                        </th>
-                                        <th>
+                                            <th class="col-6">
 
-                                            Data di Inizio
+                                                Nome
+    
+                                            </th>
+                                            <th>
+    
+                                                Data di Inizio
+    
+                                            </th>
+                                            <th>
+    
+                                                ROI
+    
+                                            </th>
+                                            <th>
+    
+                                                Stato
+    
+                                            </th>
+                                            <th>
+    
+                                                Azioni
+    
+                                            </th>
 
-                                        </th>
-                                        <th>
+                                        </tr>
 
-                                            ROI
-
-                                        </th>
-                                        <th>
-
-                                            Stato
-
-                                        </th>
-                                        <th>
-
-                                            Azioni
-
-                                        </th>
                                     </thead>
+                                    <tbody>
+
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-success rounded w-75  justify-content-center d-flex justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        done
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td>
+
+                                                <div class="bg-success rounded w-75  justify-content-center d-flex justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        done
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-success rounded w-75  justify-content-center d-flex justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        done
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-warning rounded w-75  justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        in progress
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-success rounded w-75  justify-content-center d-flex justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        done
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-danger rounded w-75  justify-content-center d-flex">
+
+                                                    <span class="text-center text-light">
+
+                                                        failed
+                                                    
+                                                    </span>
+
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-success rounded w-75  justify-content-center d-flex justify-content-center">
+                                                    <span class="text-center text-light">
+                                                        done
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+
+                                                <span class="text-danger">
+
+                                                    <i class="fa-solid fa-ice-cream"></i>
+                                                
+                                                </span>
+                                                Classe 114
+
+                                            </td>
+                                            <td>
+
+                                                11/06/2023
+
+                                            </td>
+                                            <td>
+
+                                                20%
+
+                                            </td>
+                                            <td class=" justify-content-center">
+
+                                                <div class="bg-danger rounded w-75  justify-content-center d-flex">
+                                                    <span class="text-center text-light">
+                                                        failed
+                                                    </span>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    
+                                                </button>
+                                                <button class="border-icon">
+
+                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    
+                                                </button>
+
+                                            </td>
+                                            
+                                        </tr>
+                                        
+                                          
+                                    </tbody>
                                 </table>
 
                             </div>
 
                         </div>
-                        <div class="bg-light">
+                        <div class=" mx-3">
 
-                            ciao
+                            <div class="bg-light-grey py-2 container">
+
+                                <h2>
+
+                                    FAQ
+
+                                </h2>
+
+                            </div>
+                            <div>
+
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="accordion-item">
+
+                                        <h2 class="accordion-header">
+
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                                Come aggiungere un nuovo studente
+
+                                            </button>
+
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+                                            <div class="accordion-body">
+
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at quae aut. Odio quas, ducimus error eaque omnis aspernatur illum modi tenetur fuga deleniti? Vero, quasi assumenda dignissimos porro fugiat iste eveniet, iure quam dicta hic et corporis. Nisi, eius.
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-item">
+
+                                        <h2 class="accordion-header">
+
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                            </button>
+
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+                                            <div class="accordion-body">
+
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat mollitia in excepturi itaque incidunt laudantium dolorem fugiat, quidem possimus nobis iusto adipisci, exercitationem illo! Eum debitis, quis officia aliquam distinctio sint molestias amet, ex dicta error recusandae, impedit quae.
+                                            
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+
+                                        <h2 class="accordion-header">
+
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            
+                                                Lorem ipsum dolor sit amet.
+                                            
+                                            </button>
+
+                                        </h2>
+
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+                                            <div class="accordion-body">
+
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eaque fugit harum nam inventore magnam voluptate corporis delectus repellat explicabo cum maxime, voluptas sint molestias, repellendus soluta quos quis nulla!
+                                            
+                                            </div>
+
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+
+                            </div>
 
                         </div>
 
                     </div>
-                    <div class="col-4 bg-body">
+                    <div class="col-5">
 
-                        <div class="bg-light">
+                        <div>
 
-                            ciao
+                            <div class="container bg-light-grey me-3 mt-3 py-2">
+
+                                <h2>
+
+                                    TODO
+                                    
+                                </h2>
+                                
+                            </div>
+                            <div class="bg-primary d-flex justify-content-center py-2">
+
+                                <div class="card p-3" style="width: 18rem;">
+
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item">
+                                            
+                                            <input type="checkbox" id="scelta" name="scelta" value="Car">
+                                            <label for="scelta"> 
+
+                                                kick off
+                                            
+                                            </label>
+                                            
+                                        
+                                        </li>
+                                        <li class="list-group-item">
+                                            
+                                            <input type="checkbox" id="scelta name="scelta" value="Car">
+                                            <label for="scelta"> 
+
+                                                kick off
+                                            
+                                            </label>
+                                        
+                                        </li>
+                                        <li class="list-group-item">
+                                            
+                                            <input type="checkbox" id="scelta" name="scelta" value="Car">
+                                            <label for="scelta"> 
+
+                                                kick off
+                                            
+                                            </label>
+                                        
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
 
                         </div>
-                        <div class="bg-light">
+                        <div class="colored my-4 bordered py-2 bg-light-subtle">
 
-                            ciao
+                            <div class="card-img bordered p-4">
+
+                                <img src="img/stats.jpeg" alt="">
+                                <div>
+                                
+                                    <h4>
+    
+                                        Lista utenti attivi
+    
+                                    </h4>
+                                    <p>
+    
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+    
+                                    </p>
+                                    <hr>
+                                    <p>
+    
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+    
+                                    </p>
+                                    <hr>
+                                    <p>
+    
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+    
+                                    </p>
+                                    <hr>
+
+                                </div>
+                            </div>
+                            
 
                         </div>
 

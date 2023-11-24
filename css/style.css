@@ -19,6 +19,9 @@ header,
 main{
     background-color: #F8F9FA;
 }
+.height{
+    height: calc(100vh - 70px);
+}
 /* 
     HEADER
 */
@@ -37,6 +40,9 @@ img{
 /* 
     ASIDE
 */
+.sub{
+    height: calc(100vh - 70px);
+}
 aside{
     background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - 70px);
@@ -53,4 +59,18 @@ aside{
 .plus{
     
     border: solid 1px white;
+}
+/* 
+    MAIN
+*/
+
+.bordered{
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
