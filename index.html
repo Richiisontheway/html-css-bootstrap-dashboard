@@ -22,15 +22,15 @@
     
 </head>
 <body>
-   <!-- INIZIO HEADER -->
+<!-- INIZIO HEADER -->
     <header>
 
         <div class="row g-0">
 
             <div class="col-auto ps-2">
 
-                <img src="img/logo.svg" alt="BOOLEAN">
-            
+                <img src="img/logo.svg" class="d-lg-block d-md-none d-sm-none d-none "  alt="BOOLEAN">
+                <img src="img/mobile-logo.png" class="d-md-block d-lg-none logo"  alt="Boolean">
             </div>
             <div class="col p-3">
                 
@@ -48,14 +48,14 @@
             </div>
             <div class="col-auto pe-2">
                 
-                <i class="fa-solid fa-bars pe-2"></i>
-                <i class="fa-solid fa-question"></i>
-                <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+                <i class="fa-solid fa-bars pe-2 d-none d-lg-inline-block"></i>
+                <i class="fa-solid fa-question d-none d-lg-inline-block"></i>
+                <i class="fa-solid fa-ellipsis-vertical px-2 d-none d-lg-inline-block"></i>
                 <div class="dropdown d-inline-block">
 
                     <a href="#" class="orangered" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                      <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell"></i>
 
                     </a>
                     <ul class="dropdown-menu">
@@ -110,7 +110,7 @@
                         <div class="text-light pt-4">
 
                             <i class="fa-solid fa-house"></i>
-                            <span class="ms-2">
+                            <span class="ms-2 d-none d-lg-inline-block">
 
                                 Home
 
@@ -120,7 +120,7 @@
                         <div class="text-light py-3">
 
                             <i class="fa-solid fa-chart-simple"></i>
-                            <span class="ms-2">
+                            <span class="ms-2 d-none d-lg-inline-block">
 
                                 Stats
 
@@ -130,7 +130,7 @@
                         <div class="text-light">
                             
                             <i class="fa-solid fa-signal"></i>
-                            <span class="ms-2">
+                            <span class="ms-2 d-none d-lg-inline-block">
 
                                 Signal
 
@@ -142,7 +142,7 @@
                     <div class=" container text-light mx-auto py-3">
 
                         <i class="fa-solid fa-gear"></i>
-                        <span class="ms-2">
+                        <span class="ms-2 d-none d-lg-inline-block">
 
                             Admin
 
@@ -156,9 +156,9 @@
                 <!-- HEADER MAIN -->
                 <div class="bg-primary text-light">
                     
-                    <div class="row g-0 align-items-center">
+                    <div class="row g-0  flex-column align-items-start flex-md-row  align-items-md-center">
 
-                        <div class="col-7">
+                        <div class="col-6 order-1">
 
                             <div class="container">
 
@@ -188,17 +188,22 @@
                                         >>>
     
                                     </span>
-                                    <span class="badge rounded-pill bg-bluette">
+                                    <span class="badge rounded-pill bg-bluette d-inline-block d-lg-none">
+                                        
+                                        +
+        
+                                    </span>
+                                    <span class="badge rounded-pill bg-bluette d-none d-lg-inline-block">
                                         
                                         Boolean Mobile App
         
                                     </span>
-                                    <span class="badge rounded-pill bg-bluette">
+                                    <span class="badge rounded-pill bg-bluette d-none d-lg-inline-block">
                                         
                                         Boolean Web App
         
                                     </span>
-                                    <span class="badge rounded-pill bg-bluette">
+                                    <span class="badge rounded-pill bg-bluette d-none d-lg-inline-block">
                                         
                                         Boolean Blog app
         
@@ -210,7 +215,7 @@
                             </div>
 
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 order-1 ps-3 ps-md-0">
 
                             <p>
 
@@ -223,7 +228,7 @@
 
                             </span>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3 order-0 order-md-1 ps-3 ps-md-0">
 
                             <span class="align-middle">
 
@@ -454,7 +459,7 @@
                 <!-- LAYOUT COLONNE -->
                 <div class="row g-0 overflow-auto overflow-hidden bg-light">
 
-                    <div class="col-7">
+                    <div class="col-12 col-lg-7">
 
                         <div class="mx-3 my-3">
 
@@ -541,12 +546,12 @@
 
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-pen px-2"></i>
+                                                    <i class="fa-solid fa-pen p-2"></i>
                                                     
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2"></i>
                                                     
                                                 </button>
 
@@ -593,7 +598,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -640,7 +645,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -672,8 +677,10 @@
                                             <td class=" justify-content-center">
 
                                                 <div class="bg-warning rounded w-75  justify-content-center">
-                                                    <span class="text-center text-light">
-                                                        in progress
+                                                    <span class="text-center text-light d-flex justify-content-center px-2">
+                                                        
+                                                        process
+
                                                     </span>
                                                 </div>
 
@@ -687,7 +694,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -734,7 +741,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -785,7 +792,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -832,7 +839,7 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
@@ -879,16 +886,16 @@
                                                 </button>
                                                 <button class="border-icon">
 
-                                                    <i class="fa-solid fa-trash-can px-2"></i>
+                                                    <i class="fa-solid fa-trash-can p-2lock px-2"></i>
                                                     
                                                 </button>
 
                                             </td>
                                             
                                         </tr>
-                                        
-                                          
+
                                     </tbody>
+                                    
                                 </table>
 
                             </div>
@@ -896,7 +903,7 @@
                         </div>
                         <div class=" mx-3">
 
-                            <div class="bg-light-grey py-2 container">
+                            <div class="bg-light-grey py-2 container-fluid">
 
                                 <h2>
 
@@ -981,11 +988,11 @@
                         </div>
 
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-lg-5 p-3 p-lg-0">
 
                         <div>
 
-                            <div class="container bg-light-grey me-3 mt-3 py-2">
+                            <div class="container-fluid bg-light-grey me-3 mt-3 py-2">
 
                                 <h2>
 
@@ -994,7 +1001,7 @@
                                 </h2>
                                 
                             </div>
-                            <div class="bg-primary d-flex justify-content-center py-2">
+                            <div class="bg-light-subtle d-flex justify-content-center py-2">
 
                                 <div class="card p-3" style="width: 18rem;">
 
@@ -1071,6 +1078,7 @@
                                     <hr>
 
                                 </div>
+
                             </div>
                             
 

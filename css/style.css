@@ -31,8 +31,14 @@ header{
 header > .row{
     align-items: center;
 }
+.logo-container{
+    width: 50px;
+}
 img{
     max-width: 100%;
+}
+.logo{
+    max-width: 50px;
 }
 .bg-light-grey{
     background-color: #E5E5E5;
@@ -73,4 +79,17 @@ aside{
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+/* 
+    MEDIA QUERY
+*/
+
+@media screen and (max-width:576px){
+
+    tr > :nth-child(2),
+    tr > :nth-child(3) {
+        display: none;
+    }
+
 }
